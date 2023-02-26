@@ -26,8 +26,6 @@ function App() {
       <body className="flex flex-wrap justify-center w-11/12 mx-auto mt-6 h-min">
         <Card
           type="Size"
-          progress="0"
-          pixels={44}
           sizePercentage={sizePercentage}
           setSizePercentage={setSizePercentage}
         />
@@ -35,7 +33,6 @@ function App() {
           type="Stroke"
           strokePercentage={strokePercentage}
           setStrokePercentage={setStrokePercentage}
-          mt={true}
         />
         <ColorInputCard color={color} setColor={setColor} />
         <ColorSelection setColor={setColor} />

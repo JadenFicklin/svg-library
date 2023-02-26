@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 import searchIcon from "../images/search.svg";
@@ -71,7 +71,7 @@ function Card({
             )}
           </div>
           <p className="absolute top-5 right-5 w-[50px] ">
-            {type === "Size" ? sizePercentage : strokePercentage}px
+            {type === "Size" ? sizePercentage : strokePercentage / 20}px
           </p>
         </>
       )}

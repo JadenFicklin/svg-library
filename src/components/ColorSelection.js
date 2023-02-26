@@ -15,7 +15,7 @@ function ColorSelection({ setColor }) {
         <div
           key={index}
           style={{ backgroundColor: color }}
-          className="w-11 h-11 m-1 rounded-xl border-[1px] border-gray-300 grid place-content-center"
+          className="w-11 h-11 m-1 rounded-xl border-[1px] border-gray-300 grid place-content-center cursor-pointer"
           onClick={() => handleColorClick(index)}
         >
           {selectedColorIndex === index && (
