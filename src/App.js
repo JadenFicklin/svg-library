@@ -8,6 +8,8 @@ import { useState } from "react";
 function App() {
   const [svgNumber] = useState(0);
   const [color, setColor] = useState("#2c3e50");
+  const [sizePercentage, setSizePercentage] = useState(50);
+  const [strokePercentage, setStrokePercentage] = useState(50);
 
   return (
     <div className="bg-[#fdfdff] w-full min-h-screen">
@@ -22,8 +24,19 @@ function App() {
       </header>
 
       <body className="flex flex-wrap justify-center w-11/12 mx-auto mt-6 h-min">
-        <Card type="Size" progress="0" pixels={44} />
-        <Card type="Stroke" progress="0" pixels={1.4} mt={true} />
+        <Card
+          type="Size"
+          progress="0"
+          pixels={44}
+          sizePercentage={sizePercentage}
+          setSizePercentage={setSizePercentage}
+        />
+        <Card
+          type="Stroke"
+          strokePercentage={strokePercentage}
+          setStrokePercentage={setStrokePercentage}
+          mt={true}
+        />
         <ColorInputCard color={color} setColor={setColor} />
         <ColorSelection setColor={setColor} />
         <Card search={true} mt={true} maxWidth={true} />

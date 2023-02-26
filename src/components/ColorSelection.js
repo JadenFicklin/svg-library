@@ -28,7 +28,7 @@ function ColorSelection({ setColor }) {
               <img
                 src={check}
                 alt="check"
-                className="w-[90%] h-[90%] mt-[1px]"
+                className="w-[90%] h-[90%] mt-[2px] relative left-[1px] scale-[70%]"
               />
             </div>
           )}
