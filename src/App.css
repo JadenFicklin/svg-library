@@ -5,6 +5,9 @@
 .gray-shadow {
   box-shadow: 0px 2px 16px rgba(156, 153, 153, 0.4);
 }
+.light-gray-shadow {
+  box-shadow: 0px 2px 16px rgba(156, 153, 153, 0.2);
+}
 .rc-slider-track {
   background-color: black;
 }

@@ -26,7 +26,7 @@ function Card({
     <div
       className={`${
         maxWidth && `max-w-[800px] `
-      } relative w-full h-16 bg-white rounded-md gray-shadow max-w-[400px] m-3`}
+      } relative w-full h-14 bg-white rounded-md gray-shadow max-w-[400px] m-3`}
     >
       {search ? (
         <div
@@ -50,8 +50,8 @@ function Card({
         </div>
       ) : (
         <>
-          <p className="absolute top-5 left-5 w-[50px] ">{type}</p>
-          <div className="relative w-5/12 mx-auto my-3 top-3">
+          <p className="absolute top-4 left-5 w-[50px] ">{type}</p>
+          <div className="relative w-5/12 mx-auto my-3 top-[10px]">
             {type === "Size" ? (
               <Slider
                 railStyle={{ backgroundColor: "gray" }}
@@ -80,7 +80,7 @@ function Card({
               />
             )}
           </div>
-          <p className="absolute top-5 right-5 w-[50px] ">
+          <p className="absolute top-4 right-5 w-[50px] ">
             {type === "Size" ? sizePercentage : strokePercentage / 20}px
           </p>
         </>

@@ -2,14 +2,31 @@ import "./App.css";
 import Card from "./components/Card.js";
 import ColorSelection from "./components/ColorSelection";
 import ColorInputCard from "./components/ColorInputCard.js";
+import useSvgZustand from "./state/useSvgZustand";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import SvgCard from "./components/SvgCard";
 
 function App() {
   const [svgNumber] = useState(0);
   const [color, setColor] = useState("#2c3e50");
   const [sizePercentage, setSizePercentage] = useState(50);
-  const [strokePercentage, setStrokePercentage] = useState(50);
+  const [strokePercentage, setStrokePercentage] = useState(30);
+
+  const { setSize, setStroke, setInitialColor } = useSvgZustand((state) => ({
+    size: state.size,
+    stroke: state.stroke,
+    initialColor: state.initialColor,
+    setSize: state.setSize,
+    setStroke: state.setStroke,
+    setInitialColor: state.setInitialColor,
+  }));
+
+  useEffect(() => {
+    setSize(sizePercentage);
+    setStroke(strokePercentage);
+    setInitialColor(color);
+  }, [color, sizePercentage, strokePercentage]); // eslint-disable-line
 
   return (
     <div className="bg-[#fdfdff] w-full min-h-screen">
@@ -23,7 +40,7 @@ function App() {
         </p>
       </header>
 
-      <body className="flex flex-wrap justify-center w-11/12 mx-auto mt-6 h-min">
+      <div className="flex flex-wrap justify-center w-11/12 mx-auto mt-6 h-min">
         <Card
           type="Size"
           sizePercentage={sizePercentage}
@@ -37,7 +54,8 @@ function App() {
         <ColorInputCard color={color} setColor={setColor} />
         <ColorSelection setColor={setColor} />
         <Card search={true} mt={true} maxWidth={true} />
-      </body>
+        <SvgCard />
+      </div>
     </div>
   );
 }
