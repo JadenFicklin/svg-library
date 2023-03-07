@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 import searchIcon from "../images/search.svg";
+import c from "classnames";
 
 function Card({
   type,
@@ -19,6 +20,8 @@ function Card({
     setStrokePercentage(value);
   };
 
+  const [inputSelected, setInputSelected] = useState(false);
+
   return (
     <div
       className={`${
@@ -26,16 +29,23 @@ function Card({
       } relative w-full h-16 bg-white rounded-md gray-shadow max-w-[400px] m-3`}
     >
       {search ? (
-        <div className="flex items-center w-11/12 h-full mx-auto ">
+        <div
+          className={c(
+            "flex items-center w-full rounded-md h-full duration-500",
+            inputSelected ? "search-border" : ""
+          )}
+        >
           <img
             src={searchIcon}
             alt="Search"
-            className="block float-left w-2/12 h-6 opacity-80"
+            className="block float-left w-16 h-6 opacity-80"
           />
           <input
             type="text"
             placeholder="search"
-            className="w-10/12 outline-none"
+            className="w-full pl-2 outline-none"
+            onFocus={() => setInputSelected(true)}
+            onBlur={() => setInputSelected(false)}
           />
         </div>
       ) : (

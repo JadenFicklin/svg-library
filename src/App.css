@@ -12,3 +12,7 @@
 .rc-slider-handle {
   border-color: black;
 }
+
+.search-border {
+  box-shadow: 0 0 0 2px #6f32be;
+}
