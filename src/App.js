@@ -3,9 +3,10 @@ import Card from "./components/Card.js";
 import ColorSelection from "./components/ColorSelection";
 import ColorInputCard from "./components/ColorInputCard.js";
 import useSvgZustand from "./state/useSvgZustand";
+import SvgCard from "./components/SvgCard";
+import { svgObjects } from "./svg-library/svgs";
 
 import { useEffect, useState } from "react";
-import SvgCard from "./components/SvgCard";
 
 function App() {
   const [svgNumber] = useState(0);
@@ -35,8 +36,7 @@ function App() {
           SVG Library
         </h1>
         <p className="w-10/12 text-[#2c3e50] mx-auto text-center mt-3">
-          {svgNumber} Open source free SVG icons. Highly customizable. No
-          attribution required. For commercial use.
+          {svgObjects().length} Open source free SVG icons. Highly customizable.
         </p>
       </header>
 
