@@ -53,7 +53,6 @@ function App() {
         />
         <ColorInputCard color={color} setColor={setColor} />
         <ColorSelection setColor={setColor} />
-        <Card search={true} mt={true} maxWidth={true} />
         <SvgCard />
       </div>
     </div>
