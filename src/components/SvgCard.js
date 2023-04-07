@@ -83,9 +83,9 @@ function SvgCard() {
                     <div
                         key={index}
                         className={c(
-                            'relative pt-3 pb-12 hover:pt-2 hover:pb-[52px] duration-200 text-center bg-white rounded-md h-min light-gray-shadow place-content-center cursor-pointer',
+                            'relative pt-3 pb-12 hover:pt-2 hover:pb-[52px] duration-200 text-center rounded-md h-min light-gray-shadow place-content-center cursor-pointer',
                             initialColor === '#ffffff'
-                                ? 'bg-gray-600'
+                                ? ' bg-zinc-900'
                                 : 'bg-white'
                         )}
                         style={{
