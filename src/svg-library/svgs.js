@@ -3109,5 +3109,284 @@ export const svgObjects = (size, stroke, color) => [
         <line x1="14" y1="12" x2="14" y2="12.01" />
       </svg>
     )
+  },
+
+  {
+    title: 'calendar',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-calendar"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <rect x="3" y="5" width="18" height="16" rx="2" />
+        <path d="M16 3v4M8 3v4M3 9h18" />
+      </svg>
+    )
+  },
+  {
+    title: 'camera',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-camera"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <path d="M15 8l.01 0" />
+        <rect x="4" y="4" width="16" height="16" rx="3" />
+        <circle cx="12" cy="12" r="3" />
+      </svg>
+    )
+  },
+  {
+    title: 'cloud',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-cloud"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <path d="M5 19a7 7 0 1 1 14 0H5z" />
+      </svg>
+    )
+  },
+  {
+    title: 'cube',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-cube"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <rect x="7" y="7" width="10" height="10" rx="2" />
+      </svg>
+    )
+  },
+  {
+    title: 'flag',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-flag"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <path d="M5 5v14M5 5h14l-2 7l2 7H5" />
+      </svg>
+    )
+  },
+  {
+    title: 'gift',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-gift"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <rect x="3" y="8" width="18" height="13" rx="2" />
+        <path d="M12 8V3M8.5 3.5a2.5 2.5 0 1 1 3.5 3.5a2.5 2.5 0 1 1-3.5-3.5z" />
+      </svg>
+    )
+  },
+  {
+    title: 'heart',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-heart"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <path d="M12 21C12 21 4 13.5 4 8.5A4.5 4.5 0 0 1 12 4a4.5 4.5 0 0 1 8 4.5C20 13.5 12 21 12 21z" />
+      </svg>
+    )
+  },
+  {
+    title: 'lock',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-lock"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <rect x="5" y="11" width="14" height="10" rx="2" />
+        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+      </svg>
+    )
+  },
+  {
+    title: 'moon',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-moon"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" />
+      </svg>
+    )
+  },
+  {
+    title: 'star',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-star"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <polygon points="12 17.27 18.18 21 15.64 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 8.36 13.97 5.82 21 12 17.27" />
+      </svg>
+    )
+  },
+  {
+    title: 'sun',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-sun"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <circle cx="12" cy="12" r="5" />
+        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+      </svg>
+    )
+  },
+  {
+    title: 'user',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-user"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <circle cx="12" cy="7" r="4" />
+        <path d="M5.5 21a8.38 8.38 0 0 1 13 0" />
+      </svg>
+    )
+  },
+  {
+    title: 'wifi',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-wifi"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <path d="M5 13a10 10 0 0 1 14 0M8.5 16.5a5 5 0 0 1 7 0M12 20h.01" />
+      </svg>
+    )
+  },
+  {
+    title: 'wrench',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-wrench"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <path d="M22 2l-7 7" />
+        <circle cx="8.5" cy="8.5" r="7.5" />
+      </svg>
+    )
+  },
+  {
+    title: 'zap',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-zap"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        strokeWidth={stroke}
+        stroke={color}
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+      </svg>
+    )
   }
 ];

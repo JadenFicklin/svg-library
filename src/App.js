@@ -5,6 +5,7 @@ import ColorInputCard from './components/ColorInputCard.js';
 import useSvgZustand from './state/useSvgZustand';
 import SvgCard from './components/SvgCard';
 import { svgObjects } from './svg-library/svgs';
+import { reactIconObjects } from './data/reactIconList';
 import c from 'classnames';
 
 import { useEffect, useState } from 'react';
@@ -50,7 +51,8 @@ function App() {
             'w-10/12 text-[#2c3e50] mx-auto text-center mt-3',
             initialColor === '#ffffff' ? 'text-white' : 'text-[#2c3e50]'
           )}>
-          {svgObjects().length} Open source free SVG icons. Highly customizable.
+          {svgObjects().length + reactIconObjects.length} Open source free SVG
+          icons. Highly customizable.
         </p>
       </header>
 
